@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  <!-- Importante porque Google maps api no sirve sin HTML5  -->
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Librerias y APIs</title>
+
+  <link rel="stylesheet" href="./CSS/StyleMapa.css">
+
 </head>
 <body>
-  
+  <div id="map"></div>
+
+  <!-- Scripts para importar Maps -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" defer></script> 
+
+  <script src="./JS/ScriptMapa.js"></script>
 </body>
 </html>

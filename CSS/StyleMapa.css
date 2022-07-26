@@ -1,0 +1,9 @@
+/*  Hoja de estilo Básica de la documentación Oficial */
+
+#map{
+  height: 100%;
+}
+
+html, body{
+  height: 100%;
+}
