@@ -1,35 +1,46 @@
 # Exposicion-Librerias-APIs
 
-Aquí irá la guía de qué tiene hecho el proyecto:
+Lista de Temas (Lo que está hecho tiene un check):
 
-Google 
-o Google Maps
-  Referencia a Objeto Geolocation ✓
+Google:
 
-  Obtener la posición ✓
+    Google Maps:
 
-  Manejo de errores ✓
-  
-  Mapeando posición actual: 
-    Librería Google Maps API ✓
+      Referencia a Objeto Geolocation ✓
 
-    Recuperando la posición actual 
-    
-    Cálculo de distancias entre puntos
+      Obtener la posición ✓
 
-    Actualización de la posición continúa. ✓
+      Manejo de errores ✓
 
-o Google Traslate
-o Google Charts
+      Mapeando posición actual
 
+        Librería Google Maps API ✓
+
+        Recuperando la posición actual ✓
+
+        Cálculo de distancias entre puntos ✓
+
+        Actualización de la posición continúa. ✓
+
+    Google Traslate
+
+    Google Charts
 
 Vue.js
-o Introducción 
-  Definición e Historia
-  Instalación y Configuración
 
-o Sintaxis
-  Sintaxis básica
-  Selección de Elementos (selectores)
-  Acceso y Manipulación del DOM
-  Eventos
+    Introducción
+
+      Definición e Historia
+
+      Instalación y Configuración
+
+
+    Sintaxis
+
+      Sintaxis básica
+
+      Selección de Elementos (selectores)
+
+      Acceso y Manipulación del DOM
+
+      Eventos
