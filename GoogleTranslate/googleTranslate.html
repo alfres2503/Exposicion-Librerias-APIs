@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Página Google Translate </title>
+    <link rel="stylesheet" href="CSS/styleTranslate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Creamos dos div con sus nombres de "container" y "wrapper" -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <!-- Dentro del Div "Wrapper creamos dos textArea
+                donde en el primer textarea escribimos la palabra o frase que quermos traducir y el segundo aparece traducido" -->
+          <textarea spellcheck="false" class="from-text" placeholder="Ingrese el texto"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Traducido"></textarea>
+        </div>
+        <!-- Fin div "Wrapper" -->
+
+        <!-- Abrimos un ul dentro de el iremos a llamar iconos de la página Font Awesome llamada en el head-->
+        <ul class="controls">
+          <li class="row from">
+
+            <!-- Aqui colocamos los iconos de volumen y para copiar -->
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+
+            <select></select>
+          </li>
+          <!-- El siguiente 'li' es el icono de viseversa -->
+          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+          <li class="row to">
+              <select>    </select>  
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Aqui iria el botton que traduce -->
+      <button>Traducir texto</button>
+    </div>
+
+    <script src="JS/Country.js"></script>
+    <script src="js/GoogleTranslate.js"></script>
+
+  </body>
+</html>
