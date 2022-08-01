@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Grupo 4 | Google Charts</title>
 
     <link rel="icon" type="image/x-icon" href="./FavIcon.svg">
 
+    <!-- Importación de la Api de google -->
+
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <!-- De la Api, lo que queremos incluir -->
+    <!-- packages = Tipos de charts que se quiere incluir -->
     <script type="text/javascript"> google.load('visualization', '1', { packages: ['corechart'] }); </script>
-    
+
+    <!--Mi CSS-->
     <link rel="stylesheet" href="./CSS/GoogleChartsAPIBarChart.css">
 
     <!-- Bootstrap 5.2 Style -->
@@ -20,6 +28,7 @@
 
     <!-- íconos FontAwesome -->
     <script src="https://kit.fontawesome.com/c2796234bc.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -56,18 +65,25 @@
         </div>
     </nav>
 
+    <!-- Google Charts -->
     <center>
         <h1>Google API Bar Chart</h1>
     </center>
+    <!-- Contenedor donde se mostrará el gráfico -->
     <center>
         <div id="chart"></div>
     </center>
 
+    <!--Mi Script-->
     <script type="text/javascript" src="./JS/GoogleChartsAPIBarChart.js"></script>
 
     <!-- Bootstrap 5.2 Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 
 </body>
 
