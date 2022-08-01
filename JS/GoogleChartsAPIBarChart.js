@@ -3,17 +3,17 @@ function renderChart(){
     var data = google.visualization.arrayToDataTable([
         ['Productos', 'Ventas'],
         ['Zapatos', 40],
-        ['Sobreros', 50],
+        ['Sombreros', 50],
         ['Abrigos', 35],
         ['Bufandas', 20],
     ]);
 
     //Opcional, añadir estilos a la gráfica, en este caso, el título, los ejes y los valores
     var options = {
-        title: 'Product sales',
+        title: 'Ventas de productos',
         chartArea: {width: '50%'},
         hAxis: {
-            title: 'Product',
+            title: 'Cantidad vendida',
         },
     };
 
