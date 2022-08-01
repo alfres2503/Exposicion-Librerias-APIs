@@ -22,7 +22,7 @@ Google:
 
         Actualización de la posición continúa. ✓
 
-    Google Traslate
+    Google Traslate ✓
 
     Google Charts
 

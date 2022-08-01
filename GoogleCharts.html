@@ -1,19 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grupo 4 | Google Maps</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 4 | Google Charts</title>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript"> google.load('visualization', '1', { packages: ['corechart'] }); </script>
+    
+    <link rel="stylesheet" href="./CSS/GoogleChartsAPIBarChart.css">
 
     <!-- Bootstrap 5.2 Style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-    <!-- íconos FontAwesome -->
-    <script src="https://kit.fontawesome.com/c2796234bc.js" crossorigin="anonymous"></script>
 </head>
-    
+
 <body>
     <!-- Bootstrap Nav  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,47 +51,19 @@
         </div>
     </nav>
 
-    <!-- Contenido -->
-    <div>
-        <div class="container-fluid">
-            <h1 class="mt-2">Google Maps API</h1>
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="from" class="col-xs-2 control-label"></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="from" placeholder="Origen" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-    
-                    <label for="to" class="col-xs-2 control-label"></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="to" placeholder="Destino" class="form-control">
-                    </div>
-    
-                </div>
-            </form>
-    
-            <div class="col-xs-offset-2 col-xs-10 my-3">
-                <button class="btn btn-dark btn-lg my-1" onclick="calcRoute();"><i class="fa-solid fa-route"></i> Calcular Ruta</button>
-                <button class="btn btn-dark btn-lg my-1" onclick="getPosition();"><i class="fa-solid fa-location-dot"></i> Mostrar mi ubicación</button>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div id="map" style="width: 100%; height: 350px; margin-bottom: 30px; "></div>
-            <div id="output"></div>
-        </div>
-    </div>
+    <center>
+        <h1>Google API Bar Chart</h1>
+    </center>
+    <center>
+        <div id="chart"></div>
+    </center>
+
+    <script type="text/javascript" src="./JS/GoogleChartsAPIBarChart.js"></script>
 
     <!-- Bootstrap 5.2 Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
-    <!-- Scripts para importar Maps -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGCGsLi__9I5JVYpubUsejKmA2zD8v4Ps&callback=initMap&libraries=places" defer></script> 
-
-    <script src="./JS/ScriptMapa.js"></script>
 </body>
 
 </html>
