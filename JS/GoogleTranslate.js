@@ -89,7 +89,15 @@ icons.forEach(icon => {
 
 
 
-// Solo para retornar al home porque el navbar de bootstrap no sirve con este script
-function redirectHome() {
+// Solo para retornar a las otras paginas porque el navbar de bootstrap no sirve con este script
+function redirectMaps() {
     window.location.href = "GoogleMaps.html";
+}
+
+function redirectCharts() {
+    window.location.href = "GoogleCharts.html";
+}
+
+function redirectVue() {
+    window.location.href = "VueJS.html";
 }

@@ -1,0 +1,24 @@
+/* 3fb984 verde */
+/* 31475e azul */
+
+.navbar-brand, .nav-link {
+  color: #202e3d !important;
+}
+
+nav{
+  background-color: #3fb984 !important;
+}
+
+body {
+  background-color: #31475e !important;
+}
+
+#app {
+  background-color: white;
+  border-radius: 5px;
+  height: 800px;
+}
+
+#app img {
+  width: 30%;
+}

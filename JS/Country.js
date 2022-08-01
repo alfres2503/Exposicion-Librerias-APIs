@@ -33,7 +33,7 @@ const countries = {
     "id-ID": "Indonesio",
     "is-IS": "Islandés",
     "it-IT": "Italiano",
-    "en-GB": "Ingles",
+    "en-GB": "Inglés",
     "ja-JP": "Japonés",
     "km-KM": "Jemer",
     "kk-KZ": "Kazajo",
