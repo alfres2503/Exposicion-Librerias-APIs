@@ -10,7 +10,7 @@ var appVue =
     return { // retona dichos datos para ser usados después
       creador: 'Alfredo',
       contador: 0,
-      imagen: 'Angular.png'
+      imagen: 'islandia.jpg'
     }
   }, 
   // methods es un objeto que contiene los métodos que se van a utilizar en la aplicación
