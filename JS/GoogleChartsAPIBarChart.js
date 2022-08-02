@@ -15,6 +15,7 @@ function renderChart(){
         hAxis: {
             title: 'Cantidad vendida',
         },
+        responsive: true
     };
 
     //Creacion de un objeto usando el metodo Barchart
