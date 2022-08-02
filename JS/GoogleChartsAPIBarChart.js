@@ -27,3 +27,7 @@ function renderChart(){
 }
 //Ultimo metodo de la API, cumple la funcion de configurar la devolucion de la carga, pasandole la funcion anterior
 google.setOnLoadCallback(renderChart);
+
+window.addEventListener('resize', function() {
+    renderChart();
+})
