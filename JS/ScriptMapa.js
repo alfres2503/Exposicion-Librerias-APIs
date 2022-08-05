@@ -115,11 +115,14 @@ function calcRoute() {
     unitSystem: google.maps.UnitSystem.METRIC, //IMPERIAL, METRIC
   };
 
-  directionsDisplay.setMap(mapa); //Configuramos el mapa
+  directionsDisplay.setMap(mapa); //Se vincula el mapa pasado
 
   directionsService.route(request, function (result, status) {
     if (status == google.maps.DirectionsStatus.OK) 
     {  
+         //legs[] contiene una matriz de objetos DirectionsLeg, 
+      //cada uno de los cuales contiene información sobre un tramo de la
+      // ruta, desde dos ubicaciones dentro de la ruta dada
       //Muestra tiempo y distancia
       output.innerHTML =
         " Distancia: <i class='fas fa-road'></i> : " +
@@ -129,7 +132,9 @@ function calcRoute() {
         ".</div>";
 
       //mostrar ruta
-      directionsDisplay.setDirections(result);
+      directionsDisplay.setDirections(result);  //Debido a que el renderizador es un MVCObject, detectará 
+                                                //automáticamente cualquier cambio en sus propiedades y 
+                                                //actualizará el mapa cuando sus direcciones asociadas hayan cambiado.
     } 
     else 
     {
